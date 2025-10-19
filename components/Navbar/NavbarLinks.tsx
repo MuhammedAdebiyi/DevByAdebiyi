@@ -17,7 +17,7 @@ export default function NavbarLinks() {
   <MenubarTrigger>Solutions</MenubarTrigger>
   <MenubarContent>
     <MenubarItem asChild>
-      <Link href="/solutions/websites-landings">Websites & Landings</Link>
+      <Link href="/solutions/website-landing">Websites & Landings</Link>
     </MenubarItem>
     <MenubarItem asChild>
       <Link href="/solutions/product-design">Product Design</Link>
