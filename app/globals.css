@@ -74,3 +74,100 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* fade-in used for grid */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* shimmer skeleton effect */
+.skeleton-bg {
+  position: relative;
+  overflow: hidden;
+}
+.skeleton-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0)
+  );
+  transform: skewX(-20deg);
+  animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+/* 🔥 Shimmer Effect for Navbar Buttons */
+.nav-link {
+  position: relative;
+  color: #374151; /* gray-700 */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(59, 130, 246, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.3) 0%,
+    rgba(59, 130, 246, 1) 50%,
+    rgba(59, 130, 246, 0.3) 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 1.5s linear infinite;
+}
