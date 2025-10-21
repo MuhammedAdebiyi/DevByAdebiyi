@@ -71,9 +71,9 @@ export default function About() {
                 <Image src="/lion.png" alt="Team Member" fill className="object-cover" />
               </div>
               <h3 className="font-semibold text-lg mb-1">Jane Doe</h3>
-              <p className="text-gray-500 text-sm mb-2">Lead Designer</p>
+              <p className="text-gray-500 text-sm mb-2">Senior Developer</p>
               <p className="text-gray-600 text-sm">
-                Creating intuitive and beautiful designs that delight users.
+                 Building reliable and scalable applications for all our clients.
               </p>
             </div>
 
@@ -81,10 +81,10 @@ export default function About() {
               <div className="w-32 h-32 mx-auto mb-4 relative rounded-full overflow-hidden">
                 <Image src="/koala.png" alt="Team Member" fill className="object-cover" />
               </div>
-              <h3 className="font-semibold text-lg mb-1">John Smith</h3>
-              <p className="text-gray-500 text-sm mb-2">Senior Developer</p>
+              <h3 className="font-semibold text-lg mb-1">Ismail Akaani</h3>
+              <p className="text-gray-500 text-sm mb-2">Lead Designer</p>
               <p className="text-gray-600 text-sm">
-                Building reliable and scalable applications for all our clients.
+               Leading creative direction and user-centered design Solutions
               </p>
             </div>
           </div>

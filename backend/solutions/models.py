@@ -8,6 +8,7 @@ CATEGORY_CHOICES = [
     ('process-automation', 'Process Automation'),
     ('web-apps', 'Web Apps'),
     ('it-consulting', 'IT Consulting'),
+    ('graphics-design', 'Graphics Design')
 ]
 
 class Solution(models.Model):

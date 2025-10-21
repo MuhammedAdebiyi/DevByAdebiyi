@@ -18,12 +18,11 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Building Digital Experiences that Matter
+              Building Digital Experiences That Inspire & Innovate
             </h1>
             <p className="text-lg text-gray-700 mb-8">
-              At DevByAdebiyi, we craft high-quality websites, applications, and custom software solutions
-              that drive results. Our team combines creativity, technical expertise, and user-focused design
-              to help your brand shine online.
+              At DevByAdebiyi, we code with purpose, create with passion, and design experiences that innovate for your brand. From websites to custom software solutions, 
+              we combine creativity and technical expertise to bring ideas to life and make a meaningful impact online
             </p>
             <a
               href="/contact"
@@ -38,8 +37,8 @@ export default function Home() {
             <Image
               src="/logo.PNG"
               alt="DevByAdebiyi Logo"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="rounded-full shadow-sm"
               priority
             />
@@ -50,30 +49,55 @@ export default function Home() {
       {/* Intro / Values Section */}
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Us</h2>
+           <h2 className="text-3xl font-bold mb-6" style={{ color: "#0a66c2" }}>
+             Why Choose Us
+            </h2>
           <p className="text-gray-700 mb-10">
             We believe in delivering more than just code. We deliver experiences, performance, and
             value. From startups to enterprise projects, our solutions are tailored to your goals.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-2">Quality & Reliability</h3>
-              <p className="text-gray-600 text-sm">
-                We prioritize clean, maintainable code and reliable solutions that scale with your business.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-2">User-Centered Design</h3>
-              <p className="text-gray-600 text-sm">
-                Every product we build focuses on the end-user, combining functionality with intuitive design.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-2">Innovative Solutions</h3>
-              <p className="text-gray-600 text-sm">
-                We use the latest technologies and creative approaches to solve complex business challenges.
-              </p>
-            </div>
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow flex flex-col items-center">
+            <Image
+              src="/quality-reliability.png"
+              alt="Quality & Reliability"
+              width={80}
+              height={80}
+              className="mb-4"
+            />
+            <h3 className="font-semibold text-lg mb-2">Quality & Reliability</h3>
+            <p className="text-gray-600 text-sm text-center">
+              We prioritize clean, maintainable code and reliable solutions that scale with your business.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow flex flex-col items-center">
+            <Image
+              src="/user-centered.png"
+              alt="User-Centered Design"
+              width={80}
+              height={80}
+              className="mb-4"
+            />
+            <h3 className="font-semibold text-lg mb-2">User-Centered Design</h3>
+            <p className="text-gray-600 text-sm text-center">
+              Every product we build focuses on the end-user, combining functionality with intuitive design.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow flex flex-col items-center">
+            <Image
+              src="/innovative.png"
+              alt="Innovative Solutions"
+              width={80}
+              height={80}
+              className="mb-4"
+            />
+            <h3 className="font-semibold text-lg mb-2">Innovative Solutions</h3>
+            <p className="text-gray-600 text-sm text-center">
+              We use the latest technologies and creative approaches to solve complex business challenges.
+            </p>
+          </div>
           </div>
         </div>
       </section>
@@ -82,36 +106,44 @@ export default function Home() {
       <Testimonials />
 
       {/* What We Do Section */}
-      <motion.section
-        className="bg-gray-50 py-20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeInUp}
-      >
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10">What We Do</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Web Development", text: "Building responsive, modern websites that convert visitors into customers." },
-              { title: "Product Design", text: "Designing experiences that users love and remember." },
-              { title: "Custom Software", text: "Tailored software solutions to solve your unique business challenges." },
-              { title: "Automation", text: "Streamline processes and save time with smart automation." },
-              { title: "Web Apps", text: "Fast, scalable, and robust web applications to power your business." },
-            ].map((item, idx) => (
-              <motion.div
-                key={idx}
-                className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow"
-                variants={fadeInUp}
-                transition={{ delay: idx * 0.2 }}
-              >
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.text}</p>
-              </motion.div>
-            ))}
-          </div>
+     <motion.section
+      className="bg-gray-50 py-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeInUp}
+    >
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold mb-10" style={{ color: "#0a66c2" }}>What We Do</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { title: "Web Development", text: "Building responsive, modern websites that convert visitors into customers.", image: "/web-development.png" },
+            { title: "Product Design", text: "Designing experiences that users love and remember.", image: "/product-design.png" },
+            { title: "Custom Software", text: "Tailored software solutions to solve your unique business challenges.", image: "/software.png" },
+            { title: "Automation", text: "Streamline processes and save time with smart automation.", image: "/automation.png" },
+            { title: "Web Apps", text: "Fast, scalable, and robust web applications to power your business.", image: "/app-development.png" },
+            { title: "Graphics Design", text: "Transforming your concepts into stunning visual experiences that tell your story and bring your ideas to life.", image: "/graphics-design.png" }
+          ].map((item, idx) => (
+            <motion.div
+              key={idx}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow flex flex-col items-center"
+              variants={fadeInUp}
+              transition={{ delay: idx * 0.2 }}
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={80}
+                height={80}
+                className="mb-4"
+              />
+              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-sm text-center">{item.text}</p>
+            </motion.div>
+          ))}
         </div>
-      </motion.section>
+      </div>
+    </motion.section>
     </>
   );
 }

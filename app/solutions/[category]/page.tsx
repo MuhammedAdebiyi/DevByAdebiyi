@@ -156,8 +156,7 @@ export default function SolutionCategoryPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 ease-in-out"
                       onError={(e) => {
-                        // For safety, hide broken images (Image component doesn't have onError reliably for remote images;
-                        // if you need robust handling, consider using a wrapper div + <img> fallback)
+                      
                       }}
                     />
                   ) : (

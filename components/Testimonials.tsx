@@ -28,7 +28,7 @@ export default function Testimonials() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-10">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold  mb-10" style={{ color: "#0a66c2" }}>What Our Clients Say</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <motion.div
