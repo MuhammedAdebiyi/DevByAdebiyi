@@ -117,12 +117,19 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-10" style={{ color: "#0a66c2" }}>What We Do</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            { title: "Web Development", text: "Building responsive, modern websites that convert visitors into customers.", image: "/web-development.png" },
-            { title: "Product Design", text: "Designing experiences that users love and remember.", image: "/product-design.png" },
-            { title: "Custom Software", text: "Tailored software solutions to solve your unique business challenges.", image: "/software.png" },
-            { title: "Automation", text: "Streamline processes and save time with smart automation.", image: "/automation.png" },
-            { title: "Web Apps", text: "Fast, scalable, and robust web applications to power your business.", image: "/app-development.png" },
-            { title: "Graphics Design", text: "Transforming your concepts into stunning visual experiences that tell your story and bring your ideas to life.", image: "/graphics-design.png" }
+            { title: "Web Development", text: "Responsive, high-performing websites that turn visitors into loyal customers.", image: "/web-development.png" },
+            { title: "Mobile App Development", text: "Cross-platform mobile apps bulit with speed, design and scalabilty in mind.", image: "/app-development.png" },
+            { title: "UI/UX & Product Design", text: "Creating seamless digital experiences that engage users and elevate brands.", image: "/product-design.png" },
+            { title: "Custom Software Solution", text: "Tailored software that solves complex problems and drives business growth.", image: "/software.png" },
+            { title: "Automation & Integration", text: "Work smarter with automated systems and AI-powered workflows.", image: "/automation.png" },
+            { title: "Graphics & Brand Design", text: "Transforming ideas into visuals that inspire connect and tell your story.", image: "/graphics-design.png" },
+            { title: "Digital Marketing & SEO", text: "Boost visibility, traffic, and conversions with data-driven marketing strategies.", image: "/graphics-design.png" },
+            { title: "Maintenance & Support.", text: "We keep your websites, apps and systems secure, fast, and always online.", image: "/graphics-design.png" },
+            { title: "Cloud Infrastructure & DevOps", text: "We help businesses scale securely through modern cloud architecture, CI/CD pipelines, and automated deployment.", image: "/graphics-design.png" },
+            { title: "AI & Data Solutions", text: "Harness the power of data and artificial intelligence to gain insights and automate decisions.", image: "/graphics-design.png" },
+            { title: "Cybersecurity Solutions", text: "Protect your business with secure infrastructure, risk assessments, and compliance monitoring.", image: "/graphics-design.png" }, 
+            { title: "IT Consulting & Digital Transformation", text: "Guiding enterprises through modernization, from legacy systems to cloud-native platforms.", image: "/graphics-design.png" },
+
           ].map((item, idx) => (
             <motion.div
               key={idx}
