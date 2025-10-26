@@ -123,12 +123,21 @@ export default function Home() {
             { title: "Custom Software Solution", text: "Tailored software that solves complex problems and drives business growth.", image: "/software.png" },
             { title: "Automation & Integration", text: "Work smarter with automated systems and AI-powered workflows.", image: "/automation.png" },
             { title: "Graphics & Brand Design", text: "Transforming ideas into visuals that inspire connect and tell your story.", image: "/graphics-design.png" },
+<<<<<<< HEAD
             { title: "Digital Marketing & SEO", text: "Boost visibility, traffic, and conversions with data-driven marketing strategies.", image: "/digital-marketing.png" },
             { title: "Maintenance & Support.", text: "We keep your websites, apps and systems secure, fast, and always online.", image: "/maintenance.png" },
             { title: "Cloud Infrastructure & DevOps", text: "We help businesses scale securely through modern cloud architecture, CI/CD pipelines, and automated deployment.", image: "/infrastructure.png" },
             { title: "AI & Data Solutions", text: "Harness the power of data and artificial intelligence to gain insights and automate decisions.", image: "/ai.png" },
             { title: "Cybersecurity Solutions", text: "Protect your business with secure infrastructure, risk assessments, and compliance monitoring.", image: "/graphics-design.png" }, 
             { title: "IT Consulting & Digital Transformation", text: "Guiding enterprises through modernization, from legacy systems to cloud-native platforms.", image: "/consultant.png" },
+=======
+            { title: "Digital Marketing & SEO", text: "Boost visibility, traffic, and conversions with data-driven marketing strategies.", image: "/graphics-design.png" },
+            { title: "Maintenance & Support.", text: "We keep your websites, apps and systems secure, fast, and always online.", image: "/graphics-design.png" },
+            { title: "Cloud Infrastructure & DevOps", text: "We help businesses scale securely through modern cloud architecture, CI/CD pipelines, and automated deployment.", image: "/graphics-design.png" },
+            { title: "AI & Data Solutions", text: "Harness the power of data and artificial intelligence to gain insights and automate decisions.", image: "/graphics-design.png" },
+            { title: "Cybersecurity Solutions", text: "Protect your business with secure infrastructure, risk assessments, and compliance monitoring.", image: "/graphics-design.png" }, 
+            { title: "IT Consulting & Digital Transformation", text: "Guiding enterprises through modernization, from legacy systems to cloud-native platforms.", image: "/graphics-design.png" },
+>>>>>>> ec3c7cfa7951e0659f4731d83d1ffafa12404159
 
           ].map((item, idx) => (
             <motion.div

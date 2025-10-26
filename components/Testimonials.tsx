@@ -8,7 +8,11 @@ const testimonials = [
     name: "Sarah K.",
     role: "Product Manager",
     quote: "The team at DevByAdebiyi exceeded our expectations! Their designs are intuitive and solutions scalable.",
+<<<<<<< HEAD
     image: "/testimonials/woman-1.png",
+=======
+    image: "/testimonials/sarah.jpg",
+>>>>>>> ec3c7cfa7951e0659f4731d83d1ffafa12404159
   },
   {
     name: "John D.",
